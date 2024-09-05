@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm Sonu Yadav, a passionate developer dedicated to crafting innovative and efficient software solutions. With a solid foundation in web development, data analysis, and machine learning, I strive to create seamless user experiences and impactful applications. Beyond coding and analysis, I have a knack for creative problem-solving and enjoy collaborating with teams to brainstorm innovative solutions. My goal is to blend technology with creativity to make a meaningful impact in every project I undertake.</p>
+        <img src="Sonu1.jpeg" alt="Sonu" class="Photo">
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul class="skills-list">
+            <li>Web Development</li>
+            <li>Data Analysis</li>
+            <li>Python, Java, C</li>
+            <li>Leadership</li>
+            <li>Team Management</li>
+        </ul>
+    </section>        
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>Automatic News Post Maker</h2>
+            <img src="News post maker.avif" alt="Automatic News Post Maker" class="project-image">
+            <p>An Automatic News Post Maker is an AI-powered tool designed to generate news articles automatically. It leverages Natural Language Processing (NLP) and Machine Learning (ML) techniques to create coherent and relevant news content from raw data or short input prompts. This system typically uses large language models, like GPT-4, to analyze and summarize data, generate text, and ensure the content is engaging and grammatically correct. Applications include providing real-time updates, generating reports, and producing articles for news websites. Challenges involve ensuring accuracy, maintaining objectivity, and avoiding biases in the generated content.</p>
+        </div>
+        <div class="project">
+            <h2>Data Summarisation Using NLP</h2>
+            <img src="Text-Summarization-in-NLP.jpg" alt="Data Summarisation Using NLP" class="project-image">
+            <p>Data summarization using NLP condenses large texts into shorter, coherent summaries through extractive or abstractive methods. Extractive summarization selects key sentences from the text, while abstractive summarization generates new sentences to convey main ideas. Techniques include tokenization, word embeddings, sentence scoring, semantic analysis, and neural networks like Transformers. Applications range from news aggregation and academia to customer service and legal fields. Challenges include improving semantic understanding, coherence, and addressing biases in training data.</p>
+        </div>
+        <div class="project">
+            <h2>Data Visualization of Token Currency</h2>
+            <img src="Token Currency.jpg" alt="Data Visualization of Token Currency" class="project-image">
+            <p>This project involved developing a data visualization dashboard to represent the transaction flows and market trends of a specific token currency. Using libraries like Chart.js and D3.js in a React JS environment, the dashboard provides interactive charts that display real-time updates from blockchain data. The visualizations include price fluctuations, transaction volumes, and distribution metrics, enabling users to gain insights into the market dynamics of the token. This project demonstrates my ability to integrate financial data with visualization tools to create intuitive and informative interfaces.</p>
+        </div>
+        <section id="resume">
+            <h2>Download My Resume</h2>
+            <p>You can download my resume by clicking the link below:</p>
+            <a href="https://drive.google.com/file/d/1IPVkl11_uVeQ8Jl9F9q76PqwW6_L7HDy/view?usp=sharing" class="resume-button" download>
+                Download Resume (PDF)
+            </a>
+        </section>        
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-image">
+                <img src="contact me.webp" alt="Contact Me">
+            </div>
+        </div>
+        <!-- Contact Information Block -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Phone: <a href="tel:+918434533258">+91 84345 33258</a></li>
+                <li>Email: <a href="mailto:sonu123yadav321@gmail.com">sonu123yadav321@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sonuyadav" target="_blank">linkedin.com/in/sonuyadav</a></li>
+                <li>GitHub: <a href="https://github.com/sonuyadav" target="_blank">github.com/sonuyadav</a></li>
+            </ul>
+        </div>
+    </section>        
+    <footer>
+        <p>&copy; 2024 Sonu Yadav.<br> All rights reserved.<br> Have a great day ahead!<span class="thumb-emoji"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
