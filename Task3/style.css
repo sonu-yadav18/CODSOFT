@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.9);
+    width: 360px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.calculator:hover {
+    transform: scale(1.05);
+}
+
+.display {
+    background: rgba(255, 255, 255, 0.6); /* Glass effect */
+    color: #333;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 2px solid #ccc;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    border-top: 2px solid #ccc;
+}
+
+.btn {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:active {
+    background-color: #e0e0e0;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.operator {
+    background-color: #3498db; /* Bright blue */
+    color: white;
+}
+
+.operator:active {
+    background-color: #2980b9; /* Darker blue */
+}
+
+.equal {
+    background-color: #e67e22; /* Vibrant orange */
+    color: white;
+    grid-column: span 4;
+}
+
+.equal:active {
+    background-color: #d35400; /* Darker orange */
+}
+
+.brand {
+    grid-column: span 4;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(145deg, #e74c3c, #c0392b); /* Bold red gradient */
+    border-top: 2px solid #c0392b;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: inset 2px 2px 4px #b03a2e, inset -2px -2px 4px #c0392b;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.calculator.off .display {
+    color: #bbb;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.calculator.off .btn,
+.calculator.off .btn.operator,
+.calculator.off .btn.equal {
+    background-color: #e0e0e0;
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+.calculator.off .btn:active {
+    background-color: #d0d0d0;
+}
